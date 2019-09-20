@@ -1805,8 +1805,8 @@ class TCPRelay(object):
         self.protocol_data = obfs.obfs(config['protocol']).init_data()
         self.obfs_data = obfs.obfs(config['obfs']).init_data()
 
-        if config.get('connect_verbose_info', 0) > 0:
-            common.connect_log = logging.info
+        #if config.get('connect_verbose_info', 0) > 0:
+        common.connect_log = logging.info
 
         if config.get('connect_hex_data', 0) > 0:
             self._connect_hex_data = True
