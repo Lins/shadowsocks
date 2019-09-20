@@ -136,8 +136,8 @@ class UDPRelay(object):
             stat_callback=None,
             stat_counter=None):
         self._config = config
-        if config.get('connect_verbose_info', 0) > 0:
-            common.connect_log = logging.info
+        #if config.get('connect_verbose_info', 0) > 0:
+        common.connect_log = logging.info
 
         if config.get('connect_hex_data', 0) > 0:
             self._connect_hex_data = True
